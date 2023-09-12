@@ -7,7 +7,7 @@ public class scriptTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        /// hello world
     }
 
     // Update is called once per frame
