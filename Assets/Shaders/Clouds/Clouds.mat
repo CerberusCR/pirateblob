@@ -52,15 +52,17 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorDivideBlur: 44.84
-    - _ColorDivideHeight: 298.81
+    - _ColorDivideHeight: 0
     - _DisplacementIntesity: 0.3
     - _DisplacementScale: 10
     - _DisplacementSpeed: 0.05
     - _FadeDepth: 276
+    - _MaxHeight: 361.3
+    - _MinHeight: 237.9
     - _Power: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Color1: {r: 1, g: 1, b: 1, a: 0}
-    - _Color2: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 0}
+    - _Color1: {r: 0.44842362, g: 1, b: 0.042452812, a: 0}
+    - _Color2: {r: 1, g: 0.0141509175, b: 0.0141509175, a: 0}
   m_BuildTextureStacks: []

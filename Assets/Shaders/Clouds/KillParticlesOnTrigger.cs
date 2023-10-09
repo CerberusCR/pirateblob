@@ -1,27 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class KillParticlesOnTrigger : MonoBehaviour
+public class LightningSpawning : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private float onExitRemainingLifeTime = 0;
+    public GameObject prefabToSpawn; // Assign your custom shader prefab here.
+    public int maxSpawnCount = 100; // Maximum number of objects to spawn.
+    public Vector3 spawnArea = new Vector3(10f, 2f, 10f); // Define the area where objects can spawn.
+    public float spawnInterval = 1.0f; // Time interval between spawns.
 
-    [Header("References")]
-    [SerializeField] private new ParticleSystem particleSystem;
+    private float timer = 0.0f;
+    private int spawnCount = 0;
 
-    private void OnParticleTrigger()
+    private void Update()
     {
-        List<ParticleSystem.Particle> particles = new List<ParticleSystem.Particle>();
-        if (particleSystem.GetTriggerParticles(ParticleSystemTriggerEventType.Exit, particles) <= 0) { return; }
-        ParticleSystem.Particle[] particlesArray = particles.ToArray();
-
-        for (int i = 0; i < particlesArray.Length; i++)
+        if (spawnCount < maxSpawnCount)
         {
-        if (particlesArray[i].remainingLifetime <= onExitRemainingLifeTime) { continue; }
-            particlesArray[i].remainingLifetime = onExitRemainingLifeTime;
+            timer += Time.deltaTime;
+
+            if (timer >= spawnInterval)
+            {
+                SpawnCustomObject();
+                timer = 0.0f;
+            }
         }
-        particles = new List<ParticleSystem.Particle>(particlesArray);
-        ParticlePhysicsExtensions.SetTriggerParticles(particleSystem, ParticleSystemTriggerEventType.Exit, particles);
+    }
+
+    private void SpawnCustomObject()
+    {
+        if (prefabToSpawn != null)
+        {
+            Vector3 randomPosition = transform.position + new Vector3(
+                Random.Range(-spawnArea.x, spawnArea.x),
+                Random.Range(-spawnArea.y, spawnArea.y),
+                Random.Range(-spawnArea.z, spawnArea.z)
+            );
+
+            Instantiate(prefabToSpawn, randomPosition, Quaternion.identity);
+            spawnCount++;
+        }
     }
 }
