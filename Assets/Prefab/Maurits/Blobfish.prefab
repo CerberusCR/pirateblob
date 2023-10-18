@@ -68,6 +68,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blobfish
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: b5e7f0df5c80bfe4c97c7cb5a3d9df39,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3ae6ef1226576b745a1979f049a9d49d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -63,6 +63,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gillman
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: ba26cb5c70d392c41859770a394b06d2,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 336d5054159bad4408631a1591fa8eac, type: 2}
     - target: {fileID: 8417361359673230750, guid: ba26cb5c70d392c41859770a394b06d2,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
