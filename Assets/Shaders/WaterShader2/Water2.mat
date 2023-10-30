@@ -67,7 +67,7 @@ Material:
     - _QueueOffset: 0
     - _Size: 50
     m_Colors:
-    - _DarkFoamColor: {r: 0, g: 0.30998886, b: 0.53773576, a: 0}
-    - _LightFoamColor: {r: 1, g: 1, b: 1, a: 0}
-    - _WaterColor: {r: 0, g: 0.5756109, b: 1, a: 0}
+    - _DarkFoamColor: {r: 0, g: 0.29663244, b: 0.509434, a: 0}
+    - _LightFoamColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 0}
+    - _WaterColor: {r: 0, g: 0.4142836, b: 0.7264151, a: 0}
   m_BuildTextureStacks: []
