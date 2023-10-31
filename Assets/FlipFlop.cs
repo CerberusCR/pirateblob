@@ -8,7 +8,7 @@ public class FlipFlop : MonoBehaviour {
         float thingieValue = Mathf.Sin(Time.time);
         float rollThingieValue = Mathf.Sin(Time.time);
         Quaternion rotation = Quaternion.identity;
-        Vector3 alsoRotation = new Vector3(thingieValue * waveIntensity, 180f, rollThingieValue * rollIntensity);
+        Vector3 alsoRotation = new Vector3(thingieValue * waveIntensity, 0f, rollThingieValue * rollIntensity);
         rotation.eulerAngles = alsoRotation;
         ship.rotation = rotation;
     }
