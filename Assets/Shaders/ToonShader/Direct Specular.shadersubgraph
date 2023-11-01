@@ -419,10 +419,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 132.0,
-            "y": -160.0,
-            "width": 113.0,
-            "height": 77.0
+            "x": -397.33343505859377,
+            "y": -157.33331298828126,
+            "width": 86.66665649414063,
+            "height": 78.66667938232422
         }
     },
     "m_Slots": [
@@ -486,7 +486,7 @@
 }
 
 {
-    "m_SGVersion": 0,
+    "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.ViewDirectionNode",
     "m_ObjectId": "6963012a5f5af888932fc66f061c6d54",
     "m_Group": {

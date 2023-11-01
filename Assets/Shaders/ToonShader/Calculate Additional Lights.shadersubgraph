@@ -590,10 +590,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -355.0,
-            "y": -53.0,
-            "width": 0.0,
-            "height": 0.0
+            "x": -355.33331298828127,
+            "y": -54.66667175292969,
+            "width": 247.33331298828126,
+            "height": 376.0
         }
     },
     "m_Slots": [
@@ -624,7 +624,7 @@
         "HLSL"
     ],
     "m_Precision": 2,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -842,7 +842,7 @@
 }
 
 {
-    "m_SGVersion": 0,
+    "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.ViewDirectionNode",
     "m_ObjectId": "fc5daded2071a98c97cdf9756905555c",
     "m_Group": {
