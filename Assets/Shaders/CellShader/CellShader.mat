@@ -45,9 +45,9 @@ Material:
     - _Ambient: 0.75
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimLightBrightness: 0
+    - _RimLightBrightness: 0.67
     - _RimPower: 5
-    - _ToonRampOffset: 0
+    - _ToonRampOffset: 0.81
     - _ToonRampOffsetPoint: 0
     - _ToonRampSmoothness: 0
     m_Colors:
