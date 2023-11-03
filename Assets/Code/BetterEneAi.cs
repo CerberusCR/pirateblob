@@ -7,6 +7,7 @@ public class BetterEneAi : MonoBehaviour
     public List<Transform> targets; // List of target objects
     public float moveSpeed = 1.0f; // Speed of movement
     public float rotationSpeed = 270.0f; // Speed of rotation (degrees per second)
+    public bool tpback = false;
 
     private int currentTargetIndex = 0;
 
