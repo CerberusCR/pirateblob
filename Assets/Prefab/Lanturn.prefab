@@ -81,7 +81,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.9906527, b: 0, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 1.5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -433,7 +433,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 01451ff701353db4dbb62684f4c32879, type: 2}
+      objectReference: {fileID: 2100000, guid: dc5c5afb5bac1424bba49a1b74247915, type: 2}
     - target: {fileID: 4297091047007493882, guid: 093175af19c8bf64d800bb86d3866d6e,
         type: 3}
       propertyPath: m_LocalScale.x
