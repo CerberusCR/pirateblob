@@ -5,7 +5,7 @@ using UnityEngine;
 public class TowerAi : MonoBehaviour
 {
     public List<Transform> targets = new List<Transform>(); // List of target objects' Transforms
-    public float range = 3.0f; // Range within which the follower object follows a target
+    public float range = 10.0f; // Range within which the follower object follows a target
     public float rotationSpeed = 5.0f; // Speed of the smooth transition
     private int currentTargetIndex = 0; // Index of the current target
     private Quaternion targetRotation;
