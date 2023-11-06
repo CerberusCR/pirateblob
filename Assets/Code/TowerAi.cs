@@ -9,7 +9,6 @@ public class TowerAi : MonoBehaviour
     public float rotationSpeed = 5.0f; // Speed of the smooth transition
     private int currentTargetIndex = 0; // Index of the current target
     private Animator animator;
-    private bool isInRange;
 
     void Start()
     {
@@ -39,24 +38,39 @@ public class TowerAi : MonoBehaviour
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
                 // Play the animation
-                if (!isInRange)
-                {
-                    animator.SetBool("IsInRange", true);
-                    isInRange = true;
-                }
+                animator.SetBool("IsInRange", true);
             }
             else
             {
                 // Stop the animation
-                if (isInRange)
-                {
-                    animator.SetBool("IsInRange", false);
-                    isInRange = false;
-                }
-
-                // Move to the next target if the current target is out of range
-                currentTargetIndex++;
+                animator.SetBool("IsInRange", false);
             }
         }
+
+        // Disable the Animator when no target is in range
+        if (!AnyTargetInRange())
+        {
+            animator.enabled = false;
+        }
+        else
+        {
+            animator.enabled = true;
+        }
+    }
+
+    bool AnyTargetInRange()
+    {
+        foreach (Transform target in targets)
+        {
+            if (target != null)
+            {
+                float distanceToTarget = Vector3.Distance(transform.position, target.position);
+                if (distanceToTarget <= range)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
