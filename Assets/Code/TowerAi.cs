@@ -8,7 +8,13 @@ public class TowerAi : MonoBehaviour
     public float range = 10.0f; // Range within which the follower object follows a target
     public float rotationSpeed = 5.0f; // Speed of the smooth transition
     private int currentTargetIndex = 0; // Index of the current target
-    private Quaternion targetRotation;
+    private Animator animator;
+    private bool isInRange;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -27,13 +33,27 @@ public class TowerAi : MonoBehaviour
             if (distanceToTarget <= range)
             {
                 // Calculate the target rotation
-                targetRotation = Quaternion.LookRotation(currentTarget.position - transform.position);
+                Quaternion targetRotation = Quaternion.LookRotation(currentTarget.position - transform.position);
 
                 // Smoothly interpolate the rotation
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+                // Play the animation
+                if (!isInRange)
+                {
+                    animator.SetBool("IsInRange", true);
+                    isInRange = true;
+                }
             }
             else
             {
+                // Stop the animation
+                if (isInRange)
+                {
+                    animator.SetBool("IsInRange", false);
+                    isInRange = false;
+                }
+
                 // Move to the next target if the current target is out of range
                 currentTargetIndex++;
             }
