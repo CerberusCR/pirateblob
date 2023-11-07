@@ -21385,6 +21385,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MountedCrossbowUpgraded
       objectReference: {fileID: 0}
+    - target: {fileID: 6691530463854561062, guid: 82a3be55cb0a3dc49bbd7c692b168d31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21398,6 +21403,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8146447801346057736}
   m_SourcePrefab: {fileID: 100100000, guid: 82a3be55cb0a3dc49bbd7c692b168d31, type: 3}
+--- !u!1 &1624215948311640732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 622848586663837228, guid: 82a3be55cb0a3dc49bbd7c692b168d31,
+    type: 3}
+  m_PrefabInstance: {fileID: 2174836963156165808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6269586098866795877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5272758481948946901, guid: 82a3be55cb0a3dc49bbd7c692b168d31,
@@ -21418,8 +21429,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets:
   - {fileID: 4037667348050003830}
-  range: 3
+  launchableObject: {fileID: 1624215948311640732}
+  range: 4
   rotationSpeed: 5
+  launchSpeed: 10
+  respawnDelay: 2
 --- !u!136 &8146447801346057736
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21919,7 +21933,44 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 975594012437987489}
+    - targetCorrespondingSourceObject: {fileID: 2600381864862201654, guid: 11b214f8feb31fd43831b16040e1237a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9220390402587218084}
   m_SourcePrefab: {fileID: 100100000, guid: 11b214f8feb31fd43831b16040e1237a, type: 3}
+--- !u!1 &329401379498080601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2600381864862201654, guid: 11b214f8feb31fd43831b16040e1237a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2343047495061016175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &9220390402587218084
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329401379498080601}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4979310296604391072 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7322357239677171919, guid: 11b214f8feb31fd43831b16040e1237a,
@@ -21940,8 +21991,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets:
   - {fileID: 4037667348050003830}
-  range: 3
+  launchableObject: {fileID: 329401379498080601}
+  range: 4
   rotationSpeed: 5
+  launchSpeed: 10
+  respawnDelay: 2
 --- !u!136 &975594012437987489
 CapsuleCollider:
   m_ObjectHideFlags: 0

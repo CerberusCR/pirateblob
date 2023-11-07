@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 7821438117699322649}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0387, y: -0.0092, z: -0.5317}
+  m_LocalPosition: {x: 0.0411, y: -0.0102, z: -0.5365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81,8 +81,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.93637794, b: 0, a: 1}
-  m_Intensity: 3
-  m_Range: 6
+  m_Intensity: 4
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -93,7 +93,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.19
+    m_NearPlane: 0.12
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -118,7 +118,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 503
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -241,6 +241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lanturn(Holder)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 290544b587a2f064a9d34430f43fe81e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 290544b587a2f064a9d34430f43fe81e,
         type: 3}
@@ -367,6 +372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lanturn
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38e4cf5dab832864b8ce7dd1a2cb013d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 38e4cf5dab832864b8ce7dd1a2cb013d,
         type: 3}
