@@ -285,22 +285,22 @@ PrefabInstance:
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70.60809
+      value: -37.301
       objectReference: {fileID: 0}
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.09
+      value: -46.704
       objectReference: {fileID: 0}
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.745071
+      value: -28.948
       objectReference: {fileID: 0}
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
@@ -310,7 +310,7 @@ PrefabInstance:
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
@@ -325,7 +325,7 @@ PrefabInstance:
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4149882017267960188, guid: 8b1ff863452160d43a9edcd703b5ec46,
         type: 3}
@@ -562,6 +562,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PostProcessing
+      objectReference: {fileID: 0}
+    - target: {fileID: 578898812291193285, guid: 1b12f119ce971e545bc98b6de893742b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1399,6 +1404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PPLocal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830632334604275865, guid: d5908cbf0c044c64a8a1a6a8069b5658,
+        type: 3}
+      propertyPath: weight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6830847753264340319, guid: d5908cbf0c044c64a8a1a6a8069b5658,
         type: 3}
